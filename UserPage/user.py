@@ -94,7 +94,7 @@ def user_allFunctions(driver, url):
         driver.find_element(By.ID, 'login-form_userId').send_keys('1')
         sleep_timeout_short()
         driver.find_element(By.ID, 'login-form_password').send_keys('password')
-        sleep_timeout_short()
+        sleep_timeout_long()
         driver.find_element(By.ID, 'loginSubmitButton').click()
         sleep_timeout_long()
         print('Change Password: Successful ✔')
